@@ -1,0 +1,12 @@
+on:
+  push:
+    branches:
+        - main
+
+jobs:
+  deploy-to-server:
+    steps:
+      - name: Run build script
+        run: ./.github/scripts/build-master.sh
+        shell: bash
+    runs-on: [self-hosted, linux]
