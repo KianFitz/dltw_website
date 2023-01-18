@@ -13,5 +13,14 @@ const config = {
     locales: ["en"],
     defaultLocale: "en",
   },
+  images: {
+    remotePatterns: [
+      {
+        protocol: 'https',
+        port: '',
+        hostname: 'cdn.discordapp.com'
+      }
+    ]
+  }
 };
 export default config;
